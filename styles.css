@@ -170,3 +170,9 @@ footer p {
   padding: 0;
   margin-top: 15px;
 }
+
+.example {
+  background: lavenderblush;
+  border: 1px solid #000;
+  min-height: 600px;
+}

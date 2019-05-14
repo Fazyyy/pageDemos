@@ -175,28 +175,43 @@ footer p {
   background: lavenderblush;
   border: 1px solid #000;
   min-height: 600px;
+  margin-bottom: 100px;
+  color: #fff;
+  text-align: center;
 }
 
 .example .col-sm-6 {
   background: blue;
   border: 1px solid #000;
-  min-height: 400px;
+  min-height: 40px;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
 }
 
 .example .col-sm-4 {
   background: red;
   border: 1px solid #000;
-  min-height: 400px;
+  min-height: 40px;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
 }
 
 .example .col-sm-4 {
   background: red;
   border: 1px solid #000;
-  min-height: 400px;
+  min-height: 40px;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
 }
 
-.example .col-md-4 {
+.example .col-md-3 {
   background: purple;
   border: 1px solid #000;
-  min-height: 400px;
+  min-height: 40px;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
 }

@@ -176,3 +176,27 @@ footer p {
   border: 1px solid #000;
   min-height: 600px;
 }
+
+.example .col-sm-6 {
+  background: blue;
+  border: 1px solid #000;
+  min-height: 400px;
+}
+
+.example .col-sm-4 {
+  background: red;
+  border: 1px solid #000;
+  min-height: 400px;
+}
+
+.example .col-sm-4 {
+  background: red;
+  border: 1px solid #000;
+  min-height: 400px;
+}
+
+.example .col-md-4 {
+  background: purple;
+  border: 1px solid #000;
+  min-height: 400px;
+}

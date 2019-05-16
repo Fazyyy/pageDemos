@@ -279,3 +279,51 @@ footer p {
   vertical-align: center;
   justify-content: center;
 }
+
+.single {
+  margin-bottom: 50px;
+}
+
+.single .row,
+.spec {
+  border: 1px solid #eee;
+  padding: 15px;
+  height: 100%;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.single h2,
+.spec h2 {
+  color: #1c2858;
+  font-weight: 700;
+}
+
+.single .price {
+  color: #000;
+  opacity: 0.69;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.single .price span {
+  font-size: 28px;
+}
+
+.spec {
+  margin-bottom: 100px;
+}
+
+.spec ul {
+  list-style-type: none;
+  background: #eee;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.spec ul li {
+  padding: 10px 15px;
+}
+
+.spec ul li:nth-child(even) {
+  background: #fff;
+}

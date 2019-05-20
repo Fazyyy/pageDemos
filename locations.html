@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trago - Tagline Goes Here</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/"
+          ><img src="https://www.trago.co.uk/images/logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <div
+                class="dropdown-menu disabled"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item disabled" href="#">Furniture</a>
+                <a class="dropdown-item disabled" href="#">Home &amp; Garden</a>
+                <a class="dropdown-item disabled" href="#">Essentials</a>
+                <a class="dropdown-item disabled" href="#"
+                  >Sports &amp; Lesiure</a
+                >
+                <a class="dropdown-item disabled" href="#"
+                  >Clothing &amp; Footwear</a
+                >
+                <a class="dropdown-item" href="/diy.html">DIY</a>
+                <a class="dropdown-item disabled" href="#">Electricals</a>
+                <a class="dropdown-item disabled" href="#"
+                  >Kitchens &amp; Bathrooms</a
+                >
+                <a class="dropdown-item disabled" href="#"
+                  >Motoring &amp; Motorcycling</a
+                >
+                <a class="dropdown-item disabled" href="#">Flooring</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locations.html">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In/Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="map"></div>
+
+    <div class="container locations">
+      <div class="row">
+        <div class="location card lk">
+          <div
+            class="image"
+            style="background-image:url('trago-lk.jpg');"
+          ></div>
+          <div class="desc">
+            <h2>Liskeard</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              suscipit nisi quis odio porta consequat. Nam egestas malesuada
+              mauris, faucibus sagittis dui imperdiet id. In lacinia sem diam, a
+              gravida nibh dignissim at. Integer ut lacinia est, ac dignissim
+              risus. Maecenas blandit, ante sit amet mollis tempor, dui turpis
+              bibendum ipsum, non commodo dui ipsum sit amet nibh. Integer
+              sagittis tortor ut nulla faucibus, auctor lobortis eros
+              ullamcorper.
+            </p>
+            <ul>
+              <li><i class="fas fa-users"></i> Family Fun Park</li>
+              <li><i class="fas fa-seedling"></i> The Garden Park</li>
+              <li><i class="fas fa-utensils"></i> Eat, Drink &amp; Relax</li>
+              <li><i class="fas fa-parking"></i> Free Parking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="location card na">
+          <div
+            class="image"
+            style="background-image:url('trago-na.jpg');"
+          ></div>
+          <div class="desc">
+            <h2>Newton Abbot</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              suscipit nisi quis odio porta consequat. Nam egestas malesuada
+              mauris, faucibus sagittis dui imperdiet id. In lacinia sem diam, a
+              gravida nibh dignissim at. Integer ut lacinia est, ac dignissim
+              risus. Maecenas blandit, ante sit amet mollis tempor, dui turpis
+              bibendum ipsum, non commodo dui ipsum sit amet nibh. Integer
+              sagittis tortor ut nulla faucibus, auctor lobortis eros
+              ullamcorper.
+            </p>
+
+            <ul>
+              <li><i class="fas fa-users"></i> Family Fun Park</li>
+              <li><i class="fas fa-seedling"></i> The Garden Park</li>
+              <li><i class="fas fa-utensils"></i> Eat, Drink &amp; Relax</li>
+              <li><i class="fas fa-parking"></i> Free Parking</li>
+              <li><i class="fas fa-car"></i> Petrol Station</li>
+            </ul>
+          </div>
+        </div>
+        <div class="location card fm">
+          <div class="image"></div>
+          <div class="desc">
+            <h2>Falmouth</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              suscipit nisi quis odio porta consequat. Nam egestas malesuada
+              mauris, faucibus sagittis dui imperdiet id. In lacinia sem diam, a
+              gravida nibh dignissim at. Integer ut lacinia est, ac dignissim
+              risus. Maecenas blandit, ante sit amet mollis tempor, dui turpis
+              bibendum ipsum, non commodo dui ipsum sit amet nibh. Integer
+              sagittis tortor ut nulla faucibus, auctor lobortis eros
+              ullamcorper.
+            </p>
+
+            <ul>
+              <li><i class="fas fa-users"></i> Family Fun Park</li>
+              <li><i class="fas fa-seedling"></i> The Garden Park</li>
+              <li><i class="fas fa-utensils"></i> Eat, Drink &amp; Relax</li>
+              <li><i class="fas fa-parking"></i> Free Parking</li>
+              <li><i class="fas fa-car"></i> Petrol Station</li>
+            </ul>
+          </div>
+        </div>
+        <div class="location card mt">
+          <div class="image"></div>
+          <div class="desc">
+            <h2>Merthyr Tydfil</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              suscipit nisi quis odio porta consequat. Nam egestas malesuada
+              mauris, faucibus sagittis dui imperdiet id. In lacinia sem diam, a
+              gravida nibh dignissim at. Integer ut lacinia est, ac dignissim
+              risus. Maecenas blandit, ante sit amet mollis tempor, dui turpis
+              bibendum ipsum, non commodo dui ipsum sit amet nibh. Integer
+              sagittis tortor ut nulla faucibus, auctor lobortis eros
+              ullamcorper.
+            </p>
+
+            <ul>
+              <li><i class="fas fa-users"></i> Family Fun Park</li>
+              <li><i class="fas fa-seedling"></i> The Garden Park</li>
+              <li><i class="fas fa-utensils"></i> Eat, Drink &amp; Relax</li>
+              <li><i class="fas fa-parking"></i> Free Parking</li>
+              <li><i class="fas fa-car"></i> Petrol Station</li>
+              <li><i class="fas fa-baby"></i> PlayZone</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <ul>
+              <li>Blog</li>
+              <li>Policies</li>
+              <li>Price Match</li>
+              <li>Trago Delivery Service</li>
+              <li>Click &amp; Collect</li>
+              <li>Suppliers</li>
+              <li>Check &amp; Reserve</li>
+              <li>Trago2Wheels</li>
+              <li>Sitemap</li>
+              <li>Trago2Business</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h3>Opening Hours</h3>
+            <p>Mon 0900-1800</p>
+            <p>Tue 0900-1800</p>
+            <p>Wed 0900-1800</p>
+            <p>Thur 0900-1800</p>
+            <p>Fri 0900-1800</p>
+            <p>Sat 0900-1800</p>
+            <p>Sun 0900-1800</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 7,
+          center: { lat: 51.2004366, lng: -5.0292316 }
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = "";
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers, {
+          imagePath:
+            "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"
+        });
+      }
+      var locations = [
+        { lat: 50.4547821, lng: -4.5682791 },
+        { lat: 51.7490006, lng: -3.3976307 },
+        { lat: 50.15197, lng: -5.0674937 },
+        { lat: 50.5571959, lng: -3.6673845 }
+      ];
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-mOUesGzkeyfaEFMYdsckrf7xr3iPP9U&callback=initMap"
+    ></script>
+  </body>
+</html>

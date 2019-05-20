@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Trago - Tagline Goes Here</title>
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -20,7 +26,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="/"
           ><img src="https://www.trago.co.uk/images/logo.png"
         /></a>
         <button
@@ -74,6 +80,9 @@
               </div>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="locations.html">Locations</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">Log In/Signup</a>
             </li>
             <li class="nav-item">
@@ -84,7 +93,7 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" style="margin-top:30px;">
       <div class="carousel" data-flickity>
         <div class="carousel-cell cell-1">
           <div class="container">
@@ -99,66 +108,65 @@
             </div>
           </div>
         </div>
-        <div class="carousel-cell cell-2"></div>
-        <div class="carousel-cell cell-3"></div>
+        <div class="carousel-cell cell-2">
+          <img src="banner2.jpg" alt="" />
+        </div>
       </div>
     </div>
 
     <div class="container dealsGrid">
       <div class="row">
         <div class="col-sm-4">
-          <div class="card">
+          <a href="#" class="card">
             <h2>Deal of the day</h2>
             <img src="paint.jpg" alt="" />
             <h3>25% Off 10ltr Paints</h3>
-            <p>
+            <p style="color: #000; opacity: 0.69;">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               fringilla volutpat gravida. Sed facilisis efficitur pulvinar. In
-              quis malesuada nisl. Aliquam tincidunt quis dolor ut vulputate.
-              Vestibulum a metus vitae enim cursus suscipit. Etiam bibendum
-              tempor.
+              quis malesuada nisl.
             </p>
-          </div>
+          </a>
         </div>
         <div class="col-sm-8">
           <div class="row">
             <div class="col-sm-4">
-              <div class="card">
+              <a href="single.html" class="card">
                 <img src="paint.jpg" alt="" />
-                <h2>15% Off Paints</h2>
-              </div>
+                <h3>15% Off Paints</h3>
+              </a>
             </div>
             <div class="col-sm-4">
-              <div class="card">
-                <img src="paint-red.jpg" alt="" />
-                <h2>15% Off Paints</h2>
-              </div>
+              <a href="single.html" class="card">
+                <img src="paint.jpg" alt="" />
+                <h3>15% Off Paints</h3>
+              </a>
             </div>
             <div class="col-sm-4">
-              <div class="card">
+              <a href="single.html" class="card">
                 <img src="paint.jpg" alt="" />
-                <h2>15% Off Paints</h2>
-              </div>
+                <h3>15% Off Paints</h3>
+              </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4">
-              <div class="card">
-                <img src="paint-red.jpg" alt="" />
-                <h2>15% Off Paints</h2>
-              </div>
+              <a href="single.html" class="card">
+                <img src="paint.jpg" alt="" />
+                <h3>15% Off Paints</h3>
+              </a>
             </div>
             <div class="col-sm-4">
-              <div class="card">
+              <a href="single.html" class="card">
                 <img src="paint.jpg" alt="" />
-                <h2>15% Off Paints</h2>
-              </div>
+                <h3>15% Off Paints</h3>
+              </a>
             </div>
             <div class="col-sm-4">
-              <div class="card">
+              <a href="single.html" class="card">
                 <img src="paint.jpg" alt="" />
-                <h2>15% Off Paints</h2>
-              </div>
+                <h3>15% Off Paints</h3>
+              </a>
             </div>
           </div>
         </div>
@@ -221,9 +229,9 @@
         </div>
         <div class="col-sm-6">
           <div class="card">
-            <img src="petrol.jpg" alt="" />
+            <img src="family.jpg" alt="" />
             <div class="overlay">
-              <h2>Petrol Station</h2>
+              <h2>Family Fun Park</h2>
               <p>
                 In hendrerit a ante a aliquet. Praesent orci nisi, tempus id
                 placerat quis, luctus quis nisi.
@@ -235,9 +243,33 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="card">
-            <img src="petrol.jpg" alt="" />
+            <img src="playzone.jpg" alt="" />
             <div class="overlay">
-              <h2>Garden Park</h2>
+              <h2>PlayZone</h2>
+              <p>
+                In hendrerit a ante a aliquet. Praesent orci nisi, tempus id
+                placerat quis, luctus quis nisi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="food.jpg" alt="" />
+            <div class="overlay">
+              <h2>Eat, Drink &amp; Relax</h2>
+              <p>
+                In hendrerit a ante a aliquet. Praesent orci nisi, tempus id
+                placerat quis, luctus quis nisi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="parking.jpg" alt="" />
+            <div class="overlay">
+              <h2>Free Parking</h2>
               <p>
                 In hendrerit a ante a aliquet. Praesent orci nisi, tempus id
                 placerat quis, luctus quis nisi.
@@ -249,31 +281,7 @@
           <div class="card">
             <img src="petrol.jpg" alt="" />
             <div class="overlay">
-              <h2>Garden Park</h2>
-              <p>
-                In hendrerit a ante a aliquet. Praesent orci nisi, tempus id
-                placerat quis, luctus quis nisi.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="petrol.jpg" alt="" />
-            <div class="overlay">
-              <h2>Garden Park</h2>
-              <p>
-                In hendrerit a ante a aliquet. Praesent orci nisi, tempus id
-                placerat quis, luctus quis nisi.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="petrol.jpg" alt="" />
-            <div class="overlay">
-              <h2>Garden Park</h2>
+              <h2>Petrol Stationk</h2>
               <p>
                 In hendrerit a ante a aliquet. Praesent orci nisi, tempus id
                 placerat quis, luctus quis nisi.

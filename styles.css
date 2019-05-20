@@ -1,10 +1,53 @@
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(white),
+    to(black)
+  );
+  background: -webkit-linear-gradient(top, white, black);
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
+
 body {
-  padding-top: 100px;
+  padding-top: 65px;
+}
+
+p,
+.card-body {
+  opacity: 0.75;
+}
+
+ul li {
+  opacity: 0.75;
+}
+
+nav p,
+nav ul li {
+  opacity: 1;
 }
 
 .vCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -27,10 +70,14 @@ a.navbar-brand img {
   border-bottom: 1px solid #eee;
   z-index: 999;
   background: #fff;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
 .navbar.scrollUp {
+  -webkit-transform: translateY(-80px);
+  -ms-transform: translateY(-80px);
   transform: translateY(-80px);
 }
 
@@ -46,6 +93,7 @@ a.navbar-brand img {
   border-radius: 5px;
   counter-increment: gallery-cell;
   overflow: hidden;
+  -webkit-box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -112,6 +160,7 @@ a.navbar-brand img {
 .dealsGrid .card {
   padding: 15px;
   height: 100%;
+  -webkit-box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -140,8 +189,15 @@ a.navbar-brand img {
   background-attachment: fixed;
   min-height: 400px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
@@ -176,6 +232,8 @@ a.navbar-brand img {
   padding: 15px;
   margin-bottom: 30px;
   overflow: hidden;
+  -webkit-box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
 .services .card .overlay {
@@ -183,6 +241,8 @@ a.navbar-brand img {
   bottom: -100%;
   left: 0;
   width: 100%;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   background: rgba(255, 255, 255, 0.69);
 }
@@ -205,6 +265,7 @@ footer {
 }
 
 footer ul {
+  -webkit-columns: 2;
   columns: 2;
 }
 
@@ -217,6 +278,7 @@ footer p {
 }
 
 .prodList .card {
+  -webkit-box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   padding: 15px;
   margin-bottom: 30px;
@@ -248,8 +310,12 @@ footer p {
   background: blue;
   border: 1px solid #000;
   min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   vertical-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -257,8 +323,12 @@ footer p {
   background: red;
   border: 1px solid #000;
   min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   vertical-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -266,8 +336,12 @@ footer p {
   background: red;
   border: 1px solid #000;
   min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   vertical-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -275,8 +349,12 @@ footer p {
   background: purple;
   border: 1px solid #000;
   min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   vertical-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -289,6 +367,7 @@ footer p {
   border: 1px solid #eee;
   padding: 15px;
   height: 100%;
+  -webkit-box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -321,9 +400,341 @@ footer p {
 }
 
 .spec ul li {
-  padding: 10px 15px;
+  padding: 5px 15px;
 }
 
 .spec ul li:nth-child(even) {
   background: #fff;
+}
+
+.categories {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.categories .card {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: url("construction.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  position: relative;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.categories .card:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.69);
+  z-index: 2;
+}
+
+.categories .card:hover {
+  text-decoration: none;
+}
+
+.categories .card span {
+  position: relative;
+  z-index: 3;
+  max-width: 80%;
+}
+
+.btn-primary {
+  color: #fff !important;
+}
+
+.stock {
+  max-width: 200px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.stock li {
+  padding: 0 5px;
+}
+
+.stock li:nth-child(even) {
+  background-color: #eee;
+}
+
+.stock li span {
+  float: right;
+  font-weight: 700;
+}
+
+.single-review {
+  padding-bottom: 15px;
+}
+
+.single-review p {
+  margin: 0;
+}
+
+.single-review p.author {
+  font-weight: 700;
+  color: #5c6395;
+}
+
+p.stars {
+  color: #1c2858;
+}
+
+ol.breadcrumb {
+  background-color: #5c6395;
+}
+
+ol.breadcrumb a {
+  color: #fff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+
+.breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #5c6395;
+  border-color: #5c6395;
+}
+
+.btn-primary:hover {
+  background-color: #1c2858;
+}
+
+.btn-link {
+  font-weight: 400;
+  color: #5c6395;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #1c2858;
+}
+
+.dealsGrid h2 {
+  font-weight: 700;
+  color: #1c2858;
+  text-transform: capitalize;
+}
+
+.dealsGrid h3 {
+  font-weight: 700;
+  color: #5c6395;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+
+a.card:hover {
+  text-decoration: none;
+}
+
+a.card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a.card:hover {
+  -webkit-box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+.accordion .card-header {
+  padding: 0;
+}
+
+.card-header h5 button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+}
+
+.card.item h2 {
+  color: #1c2858;
+  font-weight: 700;
+}
+
+.trs {
+  font-style: italic;
+  opacity: 0.69;
+}
+
+.item-desc {
+  font-weight: 700;
+  opacity: 0.69;
+}
+
+.card.filters h3 {
+  font-weight: 700;
+  color: #1c2858;
+}
+
+.card.filters h4 {
+  font-weight: 700;
+  color: #5c6395;
+}
+
+.card.spec ul li {
+  font-weight: 700;
+}
+.card.spec ul li span {
+  font-weight: 300;
+  float: right;
+}
+
+#map {
+  height: 450px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.locations .location {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+  padding: 15px;
+}
+
+.locations .location .image {
+  background: #5c6395;
+  height: 100%;
+  width: 33%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.locations .location .desc {
+  max-width: 66%;
+  position: relative;
+  z-index: 1;
+}
+
+.locations .location .desc h2 {
+  font-weight: 700;
+  color: #1c2858;
+}
+
+.locations .location:hover .image {
+  width: 50%;
+}
+
+.locations .location ul {
+  list-style-type: none;
+}
+
+.locations .location ul li {
+  font-weight: 700;
+}
+
+.locations .location ul li i {
+  color: #5c6395;
+  width: 25px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.price span {
+  font-size: 16px;
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin-bottom: 50px;
+}
+
+.button-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  background: #eee;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+.button-group .button.is-checked {
+  background: #1c2858;
+  color: #fff;
+}
+
+/* ---- isotope ---- */
+
+.grid {
+  margin-bottom: 50px;
+}
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 48%;
+  margin-left: 2%;
+  height: 220px;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: #262524;
+  -webkit-box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+p.item-desc {
+  min-height: 48px;
+}
+
+.element-item h2 {
+  color: #1c2858;
+  font-weight: 700;
+}
+
+.button-group h2 {
+  color: #1c2858;
+  font-weight: 700;
 }

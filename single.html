@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Trago - Tagline Goes Here</title>
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -20,7 +26,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="/"
           ><img src="https://www.trago.co.uk/images/logo.png"
         /></a>
         <button
@@ -74,6 +80,9 @@
               </div>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="locations.html">Locations</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">Log In/Signup</a>
             </li>
             <li class="nav-item">
@@ -84,12 +93,25 @@
       </div>
     </nav>
 
-    <div class="container" style="padding: 0;">
+    <div
+      class="container"
+      style="padding: 0; margin-top:25px; margin-bottom:30px;"
+    >
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Paint</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Dulux</li>
+          <li class="breadcrumb-item">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/">Shop</a>
+          </li>
+          <li class="breadcrumb-item"><a href="diy.html">DIY</a></li>
+          <li class="breadcrumb-item">
+            <a href="paint.html">Painitng &amp; Decorating</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Dulux Color Emulsion
+          </li>
         </ol>
       </nav>
     </div>
@@ -122,13 +144,17 @@
         </div>
         <div class="col-sm-4">
           <p class="price"><span>£</span>29.99</p>
-          <hr />
-          <button type="button" class="btn btn-success">
-            Delivery
-          </button>
           <button type="button" class="btn btn-primary">
-            Click &amp; Collect
+            <i class="fas fa-mouse-pointer"></i> Click &amp; Collect
           </button>
+          <hr />
+          <h3 style="color: #5c6395">Availability</h3>
+          <ul class="stock">
+            <li>Liskeard <span>04</span></li>
+            <li>Newton Abbot <span>17</span></li>
+            <li>Falmouth <span>09</span></li>
+            <li>Merthyr Tydfil <span>02</span></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -138,19 +164,56 @@
         <div class="col-sm-6">
           <h2>Specifications</h2>
           <ul>
-            <li>Lots</li>
-            <li>of</li>
-            <li>different</li>
-            <li>things</li>
-            <li>about</li>
-            <li>the</li>
-            <li>product</li>
-            <li>heres</li>
+            <li>Brand <span>Dulux</span></li>
+            <li>Dry Time <span>4 Hours</span></li>
+            <li>Finish Type <span>Smooth</span></li>
+            <li>Colour <span>Red</span></li>
+            <li>
+              Coverage/Ltr <span>15m<sup>2</sup></span>
+            </li>
+            <li>Pack Size <span>1</span></li>
+            <li>Product Type <span>Paint</span></li>
+            <li>Volume <span>10 Ltr</span></li>
+            <li>TRS Code <span>21060789</span></li>
           </ul>
         </div>
         <div class="col-sm-6">
           <h2>Reviews</h2>
-          <p>Reviews go here</p>
+          <div class="row">
+            <div class="col single-review">
+              <p class="author">David Smith</p>
+              <p class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+              <p>
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                tempor. Brunch 3 wolf moon tempor.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col single-review">
+              <p class="author">Robert Stanley</p>
+              <p class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+              <p>
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                tempor.Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                moon tempor.
+              </p>
+              <hr />
+            </div>
+          </div>
         </div>
       </div>
     </div>

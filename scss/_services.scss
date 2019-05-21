@@ -32,3 +32,17 @@
 .services .card:hover .overlay {
   bottom: 0;
 }
+
+@media (max-width: 575px) {
+  .services {
+    .card .overlay {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+}

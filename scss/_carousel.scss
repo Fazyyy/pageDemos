@@ -1,0 +1,68 @@
+.carousel {
+  background: #fff;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 380px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  .container {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    .row {
+      height: 100%;
+    }
+  }
+}
+
+.carousel-cell .carousel-cell .container .carousel-cell .box {
+  border: 5px solid red;
+  top: 100px;
+  position: absolute;
+  left: 25%;
+  height: 200px;
+  width: 200px;
+  z-index: 50;
+}
+
+.carousel-cell .box h2 {
+  color: #1c2858;
+  font-weight: 700;
+  font-size: 4em;
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+.cell-1 {
+  background: #5c6395;
+}
+
+.cell-2 {
+  background: #5c6395;
+}
+
+.cell-3 {
+  background: #5c6395;
+}
+
+.cell-left p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 6rem;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1;
+  & + p {
+    font-size: 1rem;
+    width: initial;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,126 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+  background: #fff;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.navbar.scrollUp {
+  -webkit-transform: translateY(-80px);
+  -ms-transform: translateY(-80px);
+  transform: translateY(-80px);
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+  background: #fff;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  .top-nav {
+    z-index: 2;
+    position: relative;
+    background: #fff;
+  }
+  .nav-logo {
+    max-width: 150px;
+    padding: 15px 0 5px 0;
+  }
+  .user {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      height: 100%;
+      padding: 0 15px;
+      float: right;
+      position: relative;
+      p {
+        margin: 0;
+        .items {
+          position: absolute;
+          border-radius: 50%;
+          background-color: #5c6395;
+          top: 0;
+          right: 2px;
+          color: #fff;
+          text-align: center;
+          font-size: 12px;
+          height: 19px;
+          width: 19px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.navigation.scrollUp {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.nav-search {
+  padding-top: 20px;
+  input[type="search"] {
+    width: 80%;
+  }
+}
+
+.nav-menu {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.sub-nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background: #5c6395;
+  transition: 0.5s ease;
+  z-index: 1;
+  border-bottom: 1px solid #eee;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      color: #fff;
+      padding: 10px 5px;
+      position: relative;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      transition: 0.5s ease;
+      &:hover {
+        background: #1c2858;
+      }
+      a {
+        color: #fff;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.sub-nav.open {
+  bottom: -44px;
+}

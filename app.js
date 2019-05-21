@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   var c,
     currentScrollTop = 0,
-    navbar = $(".navbar");
+    navbar = $(".navigation");
 
   $(window).scroll(function() {
     var a = $(window).scrollTop();
@@ -13,11 +13,22 @@ $(document).ready(function() {
 
     if (c < currentScrollTop && a > b + b) {
       navbar.addClass("scrollUp");
+      if ($(".sub-nav").hasClass("open")) {
+        $(".sub-nav").toggleClass("open");
+        $(".nav-menu i").toggleClass("fa-rotate-90");
+        $("body").toggleClass("padding120");
+      }
     } else if (c > currentScrollTop && !(a <= b)) {
       navbar.removeClass("scrollUp");
     }
     c = currentScrollTop;
   });
+});
+
+$(".nav-menu").click(function() {
+  $(".nav-menu i").toggleClass("fa-rotate-90");
+  $(".sub-nav").toggleClass("open");
+  $("body").toggleClass("padding120");
 });
 
 // external js: isotope.pkgd.js
@@ -28,22 +39,8 @@ var $grid = $(".grid").isotope({
   layoutMode: "fitRows"
 });
 // filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this)
-      .find(".number")
-      .text();
-    return parseInt(number, 10) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this)
-      .find(".name")
-      .text();
-    return name.match(/ium$/);
-  }
-};
+var filterFns = {};
+
 // bind filter button click
 $(".filters-button-group").on("click", "button", function() {
   var filterValue = $(this).attr("data-filter");

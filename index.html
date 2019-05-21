@@ -21,74 +21,81 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="/"
-          ><img src="https://www.trago.co.uk/images/logo.png"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-              <div
-                class="dropdown-menu disabled"
-                aria-labelledby="navbarDropdown"
-              >
-                <a class="dropdown-item disabled" href="#">Furniture</a>
-                <a class="dropdown-item disabled" href="#">Home &amp; Garden</a>
-                <a class="dropdown-item disabled" href="#">Essentials</a>
-                <a class="dropdown-item disabled" href="#"
-                  >Sports &amp; Lesiure</a
-                >
-                <a class="dropdown-item disabled" href="#"
-                  >Clothing &amp; Footwear</a
-                >
-                <a class="dropdown-item" href="/diy.html">DIY</a>
-                <a class="dropdown-item disabled" href="#">Electricals</a>
-                <a class="dropdown-item disabled" href="#"
-                  >Kitchens &amp; Bathrooms</a
-                >
-                <a class="dropdown-item disabled" href="#"
-                  >Motoring &amp; Motorcycling</a
-                >
-                <a class="dropdown-item disabled" href="#">Flooring</a>
+  <body class="padding120">
+    <nav class="navigation">
+      <div class="container-fluid top-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="/"
+                ><img
+                  class="nav-logo"
+                  src="https://www.trago.co.uk/images/logo.png"
+              /></a>
+            </div>
+            <div class="col-sm-6">
+              <form class="form-inline nav-search">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a type="button" class="btn btn-primary" href="paint.html">
+                  Search
+                </a>
+              </form>
+            </div>
+            <div class="col-sm-3">
+              <div class="vCenter">
+                <ul class="user">
+                  <li class="nav-menu">
+                    <p><i class="fas fa-bars fa-rotate-90"></i> Menu</p>
+                  </li>
+                  <li style="margin-right:5px;">
+                    <p>
+                      <i class="fas fa-shopping-basket"></i
+                      ><span class="items">6</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-user-alt"></i></p>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="locations.html">Locations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Log In/Signup</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div class="row row2">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3"></div>
+          </div>
+          <div class="row row3">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid sub-nav open">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul>
+                <li>Furniture &amp; Storage</li>
+                <li>Home Furnishings</li>
+                <li>Household</li>
+                <li>Outdoor</li>
+                <li><a href="diy.html">DIY</a></li>
+                <li>Pets &amp; Lesiure</li>
+                <li>Stationary &amp; Arts</li>
+                <li>Bathroom</li>
+                <li>Fashion</li>
+                <li>Babies, Kids &amp; Toys</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -98,11 +105,11 @@
         <div class="carousel-cell cell-1">
           <div class="container">
             <div class="row">
-              <div class="col-sm-4 vCenter text-center cell-left">
+              <div class="col-4 vCenter text-center cell-left">
                 <p>25% OFF</p>
                 <p>On Selected Lines</p>
               </div>
-              <div class="col-sm-8">
+              <div class="col-8">
                 <img src="sale.png" alt="" />
               </div>
             </div>
@@ -144,8 +151,8 @@
             </div>
             <div class="col-sm-4">
               <a href="single.html" class="card">
-                <img src="paint.jpg" alt="" />
-                <h3>15% Off Paints</h3>
+                <img src="toys.jpg" alt="" />
+                <h3>10% Off Toys</h3>
               </a>
             </div>
           </div>
@@ -281,7 +288,7 @@
           <div class="card">
             <img src="petrol.jpg" alt="" />
             <div class="overlay">
-              <h2>Petrol Stationk</h2>
+              <h2>Petrol Station</h2>
               <p>
                 In hendrerit a ante a aliquet. Praesent orci nisi, tempus id
                 placerat quis, luctus quis nisi.
@@ -296,28 +303,41 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <ul>
-              <li>Blog</li>
-              <li>Policies</li>
-              <li>Price Match</li>
-              <li>Trago Delivery Service</li>
-              <li>Click &amp; Collect</li>
-              <li>Suppliers</li>
-              <li>Check &amp; Reserve</li>
-              <li>Trago2Wheels</li>
-              <li>Sitemap</li>
-              <li>Trago2Business</li>
+            <h3><i class="fas fa-arrow-circle-right"></i> Quick Links</h3>
+            <ul class="quicklinks">
+              <li><i class="fas fa-file-alt"></i> Blog</li>
+              <li><i class="far fa-file"></i> Policies</li>
+              <li><i class="fas fa-tags"></i> Price Match</li>
+              <li><i class="fas fa-truck"></i> Trago Delivery Service</li>
+              <li><i class="fas fa-mouse-pointer"></i> Click &amp; Collect</li>
+              <li><i class="fas fa-box"></i> Suppliers</li>
+              <li><i class="fas fa-question"></i> Check &amp; Reserve</li>
+              <li><i class="fas fa-motorcycle"></i> Trago2Wheels</li>
+              <li><i class="fas fa-map-signs"></i> Sitemap</li>
+              <li><i class="fas fa-business-time"></i> Trago2Business</li>
             </ul>
           </div>
-          <div class="col-sm-6">
-            <h3>Opening Hours</h3>
-            <p>Mon 0900-1800</p>
-            <p>Tue 0900-1800</p>
-            <p>Wed 0900-1800</p>
-            <p>Thur 0900-1800</p>
-            <p>Fri 0900-1800</p>
-            <p>Sat 0900-1800</p>
-            <p>Sun 0900-1800</p>
+          <div class="col-sm-6 times">
+            <h3><i class="fas fa-clock"></i> Opening Hours</h3>
+            <p><span>Mon</span> 0900-1800</p>
+            <p><span>Tue</span> 0900-1800</p>
+            <p><span>Wed</span> 0900-1800</p>
+            <p><span>Thur</span> 0900-1800</p>
+            <p><span>Fri</span> 0900-1800</p>
+            <p><span>Sat</span> 0900-1800</p>
+            <p><span>Sun</span> 0900-1800</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid policies">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="policies">
+                <li>Privacy Policy</li>
+                <li>Cookies Policy</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

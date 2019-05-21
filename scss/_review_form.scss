@@ -1,0 +1,21 @@
+.review-form {
+  textarea,
+  input {
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+  }
+  .stars {
+    cursor: pointer;
+  }
+}
+
+.nav-item {
+  a {
+    color: #5c6395;
+    font-weight: 700;
+  }
+}

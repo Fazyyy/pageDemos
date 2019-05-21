@@ -21,74 +21,81 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="/"
-          ><img src="https://www.trago.co.uk/images/logo.png"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-              <div
-                class="dropdown-menu disabled"
-                aria-labelledby="navbarDropdown"
-              >
-                <a class="dropdown-item disabled" href="#">Furniture</a>
-                <a class="dropdown-item disabled" href="#">Home &amp; Garden</a>
-                <a class="dropdown-item disabled" href="#">Essentials</a>
-                <a class="dropdown-item disabled" href="#"
-                  >Sports &amp; Lesiure</a
-                >
-                <a class="dropdown-item disabled" href="#"
-                  >Clothing &amp; Footwear</a
-                >
-                <a class="dropdown-item" href="/diy.html">DIY</a>
-                <a class="dropdown-item disabled" href="#">Electricals</a>
-                <a class="dropdown-item disabled" href="#"
-                  >Kitchens &amp; Bathrooms</a
-                >
-                <a class="dropdown-item disabled" href="#"
-                  >Motoring &amp; Motorcycling</a
-                >
-                <a class="dropdown-item disabled" href="#">Flooring</a>
+  <body class="padding120">
+    <nav class="navigation">
+      <div class="container-fluid top-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="/"
+                ><img
+                  class="nav-logo"
+                  src="https://www.trago.co.uk/images/logo.png"
+              /></a>
+            </div>
+            <div class="col-sm-6">
+              <form class="form-inline nav-search">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a type="button" class="btn btn-primary" href="paint.html">
+                  Search
+                </a>
+              </form>
+            </div>
+            <div class="col-sm-3">
+              <div class="vCenter">
+                <ul class="user">
+                  <li class="nav-menu">
+                    <p><i class="fas fa-bars fa-rotate-90"></i> Menu</p>
+                  </li>
+                  <li style="margin-right:5px;">
+                    <p>
+                      <i class="fas fa-shopping-basket"></i
+                      ><span class="items">6</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-user-alt"></i></p>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="locations.html">Locations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Log In/Signup</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div class="row row2">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3"></div>
+          </div>
+          <div class="row row3">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid sub-nav open">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul>
+                <li>Furniture &amp; Storage</li>
+                <li>Home Furnishings</li>
+                <li>Household</li>
+                <li>Outdoor</li>
+                <li><a href="diy.html">DIY</a></li>
+                <li>Pets &amp; Lesiure</li>
+                <li>Stationary &amp; Arts</li>
+                <li>Bathroom</li>
+                <li>Fashion</li>
+                <li>Babies, Kids &amp; Toys</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -142,7 +149,8 @@
             <li>Weatherproof</li>
           </ul>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 single-product">
+          <p class="msrp">MRSP: <span>£</span>54.99</p>
           <p class="price"><span>£</span>29.99</p>
           <button type="button" class="btn btn-primary">
             <i class="fas fa-mouse-pointer"></i> Click &amp; Collect
@@ -150,68 +158,153 @@
           <hr />
           <h3 style="color: #5c6395">Availability</h3>
           <ul class="stock">
-            <li>Liskeard <span>04</span></li>
-            <li>Newton Abbot <span>17</span></li>
-            <li>Falmouth <span>09</span></li>
-            <li>Merthyr Tydfil <span>02</span></li>
+            <li>Liskeard <span>In Stock</span></li>
+            <li>Newton Abbot <span>In Stock</span></li>
+            <li>Falmouth <span class="NA">Not Available</span></li>
+            <li>Merthyr Tydfil <span>In Stock</span></li>
+            <li>Build Center <span>In Stock</span></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="container card spec">
-      <div class="row">
-        <div class="col-sm-6">
-          <h2>Specifications</h2>
-          <ul>
-            <li>Brand <span>Dulux</span></li>
-            <li>Dry Time <span>4 Hours</span></li>
-            <li>Finish Type <span>Smooth</span></li>
-            <li>Colour <span>Red</span></li>
-            <li>
-              Coverage/Ltr <span>15m<sup>2</sup></span>
-            </li>
-            <li>Pack Size <span>1</span></li>
-            <li>Product Type <span>Paint</span></li>
-            <li>Volume <span>10 Ltr</span></li>
-            <li>TRS Code <span>21060789</span></li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <h2>Reviews</h2>
+    <div class="container" style="margin-bottom: 50px; padding: 0;">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="#profile"
+            role="tab"
+            data-toggle="tab"
+            >Product Details</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#buzz" role="tab" data-toggle="tab"
+            >Leave A Review</a
+          >
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content container card spec" style="border-top: none;">
+        <div role="tabpanel" class="tab-pane fade in active show" id="profile">
           <div class="row">
-            <div class="col single-review">
-              <p class="author">David Smith</p>
-              <p class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </p>
-              <p>
-                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                tempor. Brunch 3 wolf moon tempor.
-              </p>
-              <hr />
+            <div class="col-sm-6">
+              <h2>Specifications</h2>
+              <ul>
+                <li>Brand <span>Dulux</span></li>
+                <li>Dry Time <span>4 Hours</span></li>
+                <li>Finish Type <span>Smooth</span></li>
+                <li>Colour <span>Red</span></li>
+                <li>
+                  Coverage/Ltr <span>15m<sup>2</sup></span>
+                </li>
+                <li>Pack Size <span>1</span></li>
+                <li>Product Type <span>Paint</span></li>
+                <li>Volume <span>10 Ltr</span></li>
+                <li>TRS Code <span>21060789</span></li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <h2>Reviews</h2>
+              <div class="row">
+                <div class="col single-review">
+                  <p class="author">David Smith</p>
+                  <p class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                  <p>
+                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                    moon tempor. Brunch 3 wolf moon tempor.
+                  </p>
+                  <hr />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col single-review">
+                  <p class="author">Robert Stanley</p>
+                  <p class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                  <p>
+                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                    moon tempor.Food truck quinoa nesciunt laborum eiusmod.
+                    Brunch 3 wolf moon tempor.
+                  </p>
+                  <hr />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col single-review">
+                  <p class="author">Jamie Brand</p>
+                  <p class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                  <p>
+                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                    moon tempor.Food truck quinoa nesciunt laborum eiusmod.
+                    Brunch 3 wolf moon tempor.
+                  </p>
+                  <hr />
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col single-review">
-              <p class="author">Robert Stanley</p>
-              <p class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </p>
-              <p>
-                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                tempor.Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                moon tempor.
-              </p>
-              <hr />
+        </div>
+        <div role="tabpanel" class="tab-pane fade review-form" id="buzz">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2>Your Review</h2>
+                <p>
+                  If you've purchased and sued this product, we'd love to hear
+                  your experience with it. Your review will also help fellow
+                  customers decide whether or not this is the right product for
+                  them.
+                </p>
+                <p>
+                  Please be aware that your review will not be shown until your
+                  email address has been verified.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <p class="stars">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div class="col-sm-4">
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <div class="col-sm-12">
+                <textarea placeholder="Your opinion of the product"></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" style="float:right">
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -222,28 +315,41 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <ul>
-              <li>Blog</li>
-              <li>Policies</li>
-              <li>Price Match</li>
-              <li>Trago Delivery Service</li>
-              <li>Click &amp; Collect</li>
-              <li>Suppliers</li>
-              <li>Check &amp; Reserve</li>
-              <li>Trago2Wheels</li>
-              <li>Sitemap</li>
-              <li>Trago2Business</li>
+            <h3><i class="fas fa-arrow-circle-right"></i> Quick Links</h3>
+            <ul class="quicklinks">
+              <li><i class="fas fa-file-alt"></i> Blog</li>
+              <li><i class="far fa-file"></i> Policies</li>
+              <li><i class="fas fa-tags"></i> Price Match</li>
+              <li><i class="fas fa-truck"></i> Trago Delivery Service</li>
+              <li><i class="fas fa-mouse-pointer"></i> Click &amp; Collect</li>
+              <li><i class="fas fa-box"></i> Suppliers</li>
+              <li><i class="fas fa-question"></i> Check &amp; Reserve</li>
+              <li><i class="fas fa-motorcycle"></i> Trago2Wheels</li>
+              <li><i class="fas fa-map-signs"></i> Sitemap</li>
+              <li><i class="fas fa-business-time"></i> Trago2Business</li>
             </ul>
           </div>
-          <div class="col-sm-6">
-            <h3>Opening Hours</h3>
-            <p>Mon 0900-1800</p>
-            <p>Tue 0900-1800</p>
-            <p>Wed 0900-1800</p>
-            <p>Thur 0900-1800</p>
-            <p>Fri 0900-1800</p>
-            <p>Sat 0900-1800</p>
-            <p>Sun 0900-1800</p>
+          <div class="col-sm-6 times">
+            <h3><i class="fas fa-clock"></i> Opening Hours</h3>
+            <p><span>Mon</span> 0900-1800</p>
+            <p><span>Tue</span> 0900-1800</p>
+            <p><span>Wed</span> 0900-1800</p>
+            <p><span>Thur</span> 0900-1800</p>
+            <p><span>Fri</span> 0900-1800</p>
+            <p><span>Sat</span> 0900-1800</p>
+            <p><span>Sun</span> 0900-1800</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid policies">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="policies">
+                <li>Privacy Policy</li>
+                <li>Cookies Policy</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

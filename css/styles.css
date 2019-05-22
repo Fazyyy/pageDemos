@@ -113,6 +113,34 @@
 
   .sub-nav.open {
     bottom: -415px; } }
+.sub-nav li .drop-down {
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  background: #5c6395;
+  width: initial;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  top: 100%;
+  width: 220px; }
+  .sub-nav li .drop-down li {
+    color: #5c6395; }
+    .sub-nav li .drop-down li a {
+      color: #5c6395; }
+    .sub-nav li .drop-down li:hover {
+      color: #1c2858;
+      background: #fff; }
+      .sub-nav li .drop-down li:hover a {
+        color: #1c2858;
+        background: #fff; }
+.sub-nav li:hover > .drop-down {
+  opacity: 1;
+  pointer-events: all; }
+
+@media (max-width: 575px) {
+  .dropdown {
+    display: none !important; } }
 .parallax {
   background-image: url("../trago-image-1.jpg");
   background-position: center;

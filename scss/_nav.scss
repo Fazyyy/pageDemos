@@ -138,3 +138,43 @@
     bottom: -415px;
   }
 }
+.sub-nav {
+  li {
+    .drop-down {
+      box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      pointer-events: none;
+      background: #5c6395;
+      width: initial;
+      position: absolute;
+      left: 0;
+      background: #fff;
+      top: 100%;
+      width: 220px;
+      li {
+        color: #5c6395;
+        a {
+          color: #5c6395;
+        }
+        &:hover {
+          color: #1c2858;
+          background: #fff;
+          a {
+            color: #1c2858;
+            background: #fff;
+          }
+        }
+      }
+    }
+    &:hover > .drop-down {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .dropdown {
+    display: none !important;
+  }
+}

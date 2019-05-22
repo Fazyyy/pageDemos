@@ -1,0 +1,38 @@
+.loc-info {
+  ul {
+    li {
+      i {
+        color: #5c6395;
+        width: 20px;
+      }
+    }
+  }
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    color: #1c2858;
+    font-weight: 700;
+  }
+  ul {
+    list-style-type: none;
+  }
+  address {
+    opacity: 0.69;
+  }
+  a {
+    color: #5c6395;
+    span {
+      font-weight: 700;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #1c2858;
+    }
+  }
+}
+
+.locs {
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}

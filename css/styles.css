@@ -361,6 +361,75 @@ footer .quicklinks {
   color: #5c6395;
   font-weight: 700; }
 
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px; }
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -0;
+  opacity: 0; }
+
+.rate:not(:checked) > label {
+  float: right;
+  width: 33px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #eee;
+  margin-right: 5px; }
+
+.rate:not(:checked) > label:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f005";
+  transition: 0.5s ease; }
+
+.rate > input:checked ~ label {
+  color: #5c6395;
+  font-weight: 900; }
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #5c6395; }
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #5c6395; }
+
+.rate:checked > label:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f005";
+  font-weight: 900; }
+
+.loc-info ul li i {
+  color: #5c6395;
+  width: 20px; }
+.loc-info .container {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+.loc-info h2 {
+  color: #1c2858;
+  font-weight: 700; }
+.loc-info ul {
+  list-style-type: none; }
+.loc-info address {
+  opacity: 0.69; }
+.loc-info a {
+  color: #5c6395; }
+  .loc-info a span {
+    font-weight: 700; }
+  .loc-info a:hover {
+    text-decoration: none;
+    color: #1c2858; }
+
+.locs {
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); }
+
 .vCenter {
   height: 100%;
   display: flex;

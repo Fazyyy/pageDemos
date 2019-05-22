@@ -1,5 +1,5 @@
 @import "nav", "parallax", "categories", "services", "footer", "carousel",
-  "review_form";
+  "review_form", "rating", "loc-tabs";
 
 .vCenter {
   height: 100%;
@@ -83,8 +83,6 @@ a.navbar-brand img {
 
 .dealsGrid {
   margin-top: 100px;
-  .col-6 {
-  }
 }
 
 .dealsGrid .card {

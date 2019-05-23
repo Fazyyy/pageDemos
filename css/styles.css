@@ -107,7 +107,7 @@
 
 @media (max-width: 575px) {
   .sub-nav ul {
-    hright: initial; }
+    height: initial; }
     .sub-nav ul li {
       display: block; }
 
@@ -141,8 +141,10 @@
   pointer-events: all; }
 
 @media (max-width: 575px) {
-  .dropdown {
-    display: none !important; } }
+  .sub-nav li:hover > .drop-down {
+    opacity: 0;
+    pointer-events: none;
+    display: none; } }
 .parallax {
   background-image: url("../img/trago-image-1.jpg");
   background-position: center;
@@ -868,5 +870,12 @@ p.item-desc {
 
 .container {
   min-width: 360px; }
+
+input.quants {
+  display: block;
+  width: 50%;
+  padding-left: 5px;
+  height: 38px;
+  border: 1px solid #eee; }
 
 /*# sourceMappingURL=styles.css.map */

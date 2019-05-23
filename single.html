@@ -152,9 +152,33 @@
         <div class="col-sm-4 single-product">
           <p class="msrp">MRSP: <span>£</span>54.99</p>
           <p class="price"><span>£</span>29.99</p>
-          <button type="button" class="btn btn-primary">
-            <i class="fas fa-mouse-pointer"></i> Click &amp; Collect
-          </button>
+
+          <div
+            class="row"
+            style="height:initial; border: none; box-shadow: none;"
+          >
+            <div class="col-4" style="padding: 0;">
+              <div
+                class="row"
+                style="height:initial; border: none; box-shadow: none; padding: 0;"
+              >
+                <div class="col-12">
+                  <input
+                    class="quants"
+                    type="number"
+                    min="1"
+                    max="9"
+                    value="1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <button type="button" class="btn btn-primary">
+                <i class="fas fa-mouse-pointer"></i> Click &amp; Collect
+              </button>
+            </div>
+          </div>
           <hr />
           <h3 style="color: #5c6395">Availability</h3>
           <ul class="stock">
@@ -377,14 +401,18 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="app.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71097661-7"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-71097661-7"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-71097661-7');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-71097661-7");
     </script>
-    
   </body>
 </html>

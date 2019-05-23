@@ -128,7 +128,7 @@
 @media (max-width: 575px) {
   .sub-nav {
     ul {
-      hright: initial;
+      height: initial;
       li {
         display: block;
       }
@@ -176,7 +176,13 @@
 }
 
 @media (max-width: 575px) {
-  .dropdown {
-    display: none !important;
+  .sub-nav {
+    li {
+      &:hover > .drop-down {
+        opacity: 0;
+        pointer-events: none;
+        display: none;
+      }
+    }
   }
 }

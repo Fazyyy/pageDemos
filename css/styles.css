@@ -490,9 +490,9 @@ body {
   padding-top: 80px;
   transition: 0.5s ease; }
 
-.padding120 {
-  padding-top: 120px; }
-
+@media (min-width: 576px) {
+  .padding120 {
+    padding-top: 120px; } }
 p,
 .card-body {
   opacity: 0.75; }
@@ -707,6 +707,9 @@ a.card:hover {
   font-style: italic;
   opacity: 0.69; }
 
+@media (max-width: 575px) {
+  .trs {
+    display: none; } }
 .item-desc {
   font-weight: 700;
   opacity: 0.69; }
@@ -852,6 +855,11 @@ a.card:hover {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
 
+@media (max-width: 575px) {
+  .element-item {
+    width: 100%;
+    margin-left: 0;
+    height: initial; } }
 p.item-desc {
   min-height: 48px; }
 

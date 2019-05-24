@@ -471,21 +471,6 @@ footer .quicklinks {
 i {
   transition: 0.5s ease; }
 
-.example {
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-  background: -webkit-linear-gradient(top, white, black);
-  background: -o-linear-gradient(top, white, black);
-  background: linear-gradient(to bottom, white, black); }
-
 body {
   padding-top: 80px;
   transition: 0.5s ease; }
@@ -656,17 +641,15 @@ ol.breadcrumb a {
   color: #fff;
   background-color: #5c6395;
   border-color: #5c6395; }
-
-.btn-primary:hover {
-  background-color: #1c2858; }
+  .btn-primary:hover {
+    background-color: #1c2858; }
 
 .btn-link {
   font-weight: 400;
   color: #5c6395;
   text-decoration: none; }
-
-.btn-link:hover {
-  color: #1c2858; }
+  .btn-link:hover {
+    color: #1c2858; }
 
 .dealsGrid h2 {
   font-weight: 700;
@@ -679,13 +662,12 @@ ol.breadcrumb a {
   text-transform: capitalize;
   font-size: 22px; }
 
-a.card:hover {
-  text-decoration: none; }
-
 a.card {
   position: relative;
   overflow: hidden;
   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  a.card:hover {
+    text-decoration: none; }
 
 a.card:hover {
   -webkit-box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
@@ -877,7 +859,7 @@ p.item-desc {
   font-size: 20px; }
 
 .container {
-  min-width: 360px; }
+  min-width: 330px; }
 
 input.quants {
   display: block;

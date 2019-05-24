@@ -112,7 +112,7 @@
       display: block; }
 
   .sub-nav.open {
-    bottom: -415px; } }
+    bottom: -410px; } }
 .sub-nav li .drop-down {
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   opacity: 0;
@@ -144,6 +144,9 @@
   .sub-nav li:hover > .drop-down {
     opacity: 0;
     pointer-events: none;
+    display: none; } }
+@media (max-width: 575px) {
+  .nav-menu p span {
     display: none; } }
 .parallax {
   background-image: url("../img/trago-image-1.jpg");

@@ -31,6 +31,13 @@ $(".nav-menu").click(function() {
   $("body").toggleClass("padding120");
 });
 
+$("#search-toggle").click(function() {
+  $(".search-form").toggleClass("show");
+});
+
+$("#search-close").click(function() {
+  $(".search-form").toggleClass("show");
+});
 // external js: isotope.pkgd.js
 
 // init Isotope
